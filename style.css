@@ -1,12 +1,19 @@
 /* Font Style */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
 body{
     font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 1440px;
+    height: 2500px;
+    background-color: #FFFFFF;
+    margin: auto;
 }
 header{
     background-color: #2D25A0;
-    width: 1440px;
+    
     height: 677px;
 }
 /* Banner and Title */
@@ -87,4 +94,76 @@ header{
     color: #6C6C6C;
     font-size: 16px;
     line-height: 26px;
+}
+/* Website Tail */
+footer{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    width: 484px;
+    height: 213px;
+    left: 475px;
+    top: 2350px;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 200px;
+    height: 100px;
+}
+ .logo h1{
+    color: #10437A;
+    font-family: 'Niconne', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    position: absolute;
+    left: 256px;
+    top: -50px;
+    width: 227px;
+    height: 67px;
+    margin: auto;
+}
+ .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 170px;
+}
+.icon i{
+    color: #969BAB;
+    padding-left: 20px;
+}
+.copyright{
+    font-size: 18px;
+    line-height: 24px;
+}
+/* Responsiveness */
+@media only screen and (max-width:668px){
+    body{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:668px) and (max-width:992px){
+    body{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
