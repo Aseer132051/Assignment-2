@@ -1,9 +1,10 @@
-/* Font Style */
+/* Font Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 /* Common styles */
+
 body{
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -12,6 +13,7 @@ body{
     background-color: #FFFFFF;
     margin: 0;
 }
+
 header{
     background-color: #2D25A0;
     position: absolute;
@@ -20,10 +22,13 @@ header{
     top: 0;
     left: 0;
 }
+
 /* Banner and Title */
+
 .top-section{
     display: flex;
 }
+
 .top-title h1{
     position: absolute;
     color: #FFFFFF;
@@ -34,6 +39,7 @@ header{
     font-size: 64px;
     line-height: 80px;
 }
+
 .top-banner img{
     position: absolute;
     width: 556px;
@@ -42,10 +48,11 @@ header{
     left: 743px;
     transition: transform 1s linear ;
 }
-.top-banner:hover img{
+
+header:hover img{
     transform: rotateY(360deg);
-    
 }
+
 .live{
     width: 168px;
     height: 44px;
@@ -59,8 +66,8 @@ header{
     left: 156px;
     top: 464px;
     margin-top: 27px;
-
 }
+
 .live a{
     color: #FFFFFF ;
     font-size: 16px;
@@ -68,13 +75,16 @@ header{
     font-weight: 500;
     text-decoration: none;
 }
+
  .live i{
     color: #FFFFFF ;
     width: 16px;
     height: 14px;
     margin-left: 8px;
 }
+
 /* Players Information */
+
 .players{
     width: 1050px;
     display: grid;
@@ -86,6 +96,7 @@ header{
     left: 180px;
     top: 747px;
 }
+
 .player{
     background-color: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -93,33 +104,39 @@ header{
     width: 330px;
     height: 474px;
 }
+
 .inside-border{
     padding: 15px 15px 30px 15px;
 }
+
  .player-pic img{ 
     width: 300px;
     height: 256px;
     border-radius: 10px;
 }
+
 .player-detail{
    width: 300px;
    height: 154px;
    top: 272px;
-  
 }
+
 .player-name{
     margin: 0;
     font-size: 28px;
     line-height: 40px;
     font-weight: bold;
 }
+
 .player-info{
     margin: 0;
     color: #6C6C6C;
     font-size: 16px;
     line-height: 26px;
 }
+
 /* Animation Part */
+
 @keyframes rotate {
     from {
         left: 0;
@@ -130,7 +147,6 @@ header{
         left: 700px;
         transform: rotate(180deg);
     }
-
 
     to {
         left: 1240px;
@@ -154,6 +170,7 @@ header{
 }
 
 /* Footer Part */
+
 footer{
     display: flex;
     flex-direction: column;
@@ -167,9 +184,11 @@ footer{
     left: 475px;
     top: 2600px;
 }
+
 .logo{
     display: flex;
 }
+
 .logo img{
     position: absolute;
     top: -50px;
@@ -177,6 +196,7 @@ footer{
     width: 200px;
     height: 100px;
 }
+
  .logo h1{
     color: #10437A;
     font-family: 'Niconne', cursive;
@@ -189,6 +209,7 @@ footer{
     height: 67px;
     margin: auto;
 }
+
  .icon{
     display: flex;
     justify-content: center;
@@ -196,15 +217,19 @@ footer{
     height: 32px;
     width: 170px;
 }
+
 .icon i{
     color: #969BAB;
     padding-left: 20px;
 }
+
 .copyright{
     font-size: 18px;
     line-height: 24px;
 }
+
 /* Responsiveness */
+
 /* Mobile Devices */
 @media only screen and (max-width:668px){
     body{
@@ -224,8 +249,11 @@ footer{
         left: 100px;
        top: 5550px;
     }
-    /* Tablets */
+    
 }
+
+/* Tablets */
+
 @media only screen and (min-width:668px) and (max-width:992px){
     body{
         width: 100%;
