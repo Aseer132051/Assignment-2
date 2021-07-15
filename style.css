@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
-html{
-    height: 100%;
-}
+
+/* Common styles */
 body{
     font-family: 'Poppins', sans-serif;
     position: relative;
-    width: 1440px;
+    max-width: 1440px;
     height: 100%;
     background-color: #FFFFFF;
     margin: 0;
@@ -120,6 +119,40 @@ header{
     font-size: 16px;
     line-height: 26px;
 }
+/* Animation Part */
+@keyframes rotate {
+    from {
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        left: 700px;
+        transform: rotate(180deg);
+    }
+
+
+    to {
+        left: 1240px;
+        transform: rotate(360deg);
+    }
+}
+
+.animation {
+    position: absolute;
+    top: 2290px;
+    height: 200px;
+    width: 1440px;
+}
+
+.animation img {
+    width: 200px;
+    border-radius: 100px;
+    position: absolute;
+    animation: rotate 5s linear infinite alternate;
+    animation-play-state: running;
+}
+
 /* Footer Part */
 footer{
     display: flex;
@@ -132,7 +165,7 @@ footer{
     width: 484px;
     height: 213px;
     left: 475px;
-    top: 2350px;
+    top: 2600px;
 }
 .logo{
     display: flex;
@@ -175,17 +208,21 @@ footer{
 /* Mobile Devices */
 @media only screen and (max-width:668px){
     body{
-        width: 100%;
+        width: 668px;
     }
     .players{
         grid-template-columns: repeat(1, 1fr);
     }
     .top-section{
+        display: flex;
         flex-direction: column;
+    }
+    .animation{
+        top: 5300px;
     }
     footer{
         left: 100px;
-       top: 5350px;
+       top: 5550px;
     }
     /* Tablets */
 }
@@ -195,6 +232,9 @@ footer{
     }
     .players{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .animation{
+        top: 3250px;
     }
     footer{
         left: 700px;
